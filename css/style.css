@@ -1,0 +1,35 @@
+li {
+	text-decoration-line: none;
+}
+
+li:hover {
+	background-color: tomato;
+	transition: 0.7s;
+}
+
+#itemIcons{
+	float: right;
+}
+
+.content.lineThrough {
+	text-decoration-line: line-through;
+}
+
+.completed {
+	text-decoration-line: line-through;
+}
+
+.form-control {
+	margin: 10px 0;
+}
+
+.content {
+	padding-left: 15px;
+}
+
+input[type=checkbox].listCheckbox {
+	display: inline-block;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
