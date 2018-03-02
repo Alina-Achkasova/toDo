@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
 	var itemsInput = getFromLocal('inputs');
-	var itemsCompleted = JSON.parse(localStorage.getItem("itemsCompleted"));
-	var result = JSON.parse(localStorage.getItem("object"));
+	var itemsCompleted = (JSON.parse(localStorage.getItem("itemsCompleted")) != null ? JSON.parse(localStorage.getItem("itemsCompleted")) : {});
+	var result = (JSON.parse(localStorage.getItem("object")) != null ? JSON.parse(localStorage.getItem("object")) : {});
 	var index;
 	loadList(itemsInput);
-	loadList(itemsCompleted);
+	loadList(itemsCompleted[itemsInput[index]]);
 	loadList(result[itemsInput[index]]);
 
 	$('#main-button').prop('disabled', true);
@@ -96,11 +96,6 @@ $(document).ready(function(){
 		    itemsCompleted[itemsInput[index]] = 1; 
 			localStorage.setItem('itemsCompleted', JSON.stringify(itemsCompleted));
 		}
-
-
-
-	    
-
 	});
 		
 
