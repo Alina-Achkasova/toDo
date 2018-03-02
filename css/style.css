@@ -24,10 +24,15 @@ li:hover {
 }
 
 .content {
+	display: inline-block;
+	max-width: 90%;
 	padding-left: 15px;
+	padding-right: 30px;
+	word-wrap: break-word;
 }
 
 input[type=checkbox].listCheckbox {
+	vertical-align: top;
 	display: inline-block;
 	margin-left: 15px;
 	cursor: pointer;
